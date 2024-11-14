@@ -41,6 +41,9 @@ namespace Opsive.UltimateInventorySystem.Core.DataStructures
         /// </summary>
         public bool PrevIsTransposed => PrevRotation % 180 != 0;
         
+        /// <summary>
+        /// 旋转并记录旋转信息
+        /// </summary>
         public void Rotate()
         {
             if (ItemStack == null)
