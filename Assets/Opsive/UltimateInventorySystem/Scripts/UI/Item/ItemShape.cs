@@ -119,7 +119,7 @@ namespace Opsive.UltimateInventorySystem.UI.Item
             if (m_Size.x < x || m_Size.y < y) { return false; }
 
             if (m_UseCustomShape == false) { return true; }
-
+            
             return m_CustomShape[y * m_Size.x + x];
         }
 
